@@ -36,6 +36,8 @@ public class AttendaceActivity extends AppCompatActivity {
     private static final String DATE_COL_HEADER = "Ngày chấm công";
     private static final String CONCAT_COL_HEADER = "nội dung";
     private static final String FILE_NAME = "attendance.xls";
+
+
     HSSFWorkbook workbook;
     HSSFSheet sheet;
     HSSFRow row;
@@ -163,6 +165,10 @@ public class AttendaceActivity extends AppCompatActivity {
 
         cell = row.createCell(3);
         cell.setCellValue("Lương cơ bản");
+        cell.setCellStyle(style);
+
+        cell = row.createCell(4);
+        cell.setCellValue("Tổng");
         cell.setCellStyle(style);
 
         CellStyle nameStyle = workbook.createCellStyle();

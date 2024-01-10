@@ -77,54 +77,69 @@
         android:orientation="horizontal" />
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="317dp"
+        android:layout_height="274dp"
+        android:src="@drawable/qr_code"
         app:layout_constraintBottom_toBottomOf="@+id/imageBottom"
-        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
         app:layout_constraintEnd_toEndOf="@+id/verticalRight"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
         app:layout_constraintTop_toTopOf="@+id/imageTop"
-        android:src="@drawable/qr_code"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/scanBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottonOneBottom"
-        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
-        app:layout_constraintTop_toTopOf="@+id/bottonOneTop"
-        android:textAllCaps="false"
         android:background="@drawable/custumbotton"
         android:text="@string/scan"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottonOneBottom"
+        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/bottonOneTop" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/createBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottonTwoBottom"
-        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
-        app:layout_constraintTop_toTopOf="@+id/bottonTwoTop"
-        android:textAllCaps="false"
         android:background="@drawable/custumbotton"
         android:text="@string/create"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottonTwoBottom"
+        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/bottonTwoTop" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recordedBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottonThreeBottom"
-        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
-        app:layout_constraintTop_toTopOf="@+id/bottonThreeTop"
-        android:textAllCaps="false"
         android:background="@drawable/custumbotton"
         android:text="@string/recorded"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottonThreeBottom"
+        app:layout_constraintEnd_toEndOf="@+id/verticalRight"
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft"
+        app:layout_constraintTop_toTopOf="@+id/bottonThreeTop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="431dp"
+        android:layout_height="83dp"
+        android:background="@color/teal_700"
+        android:text="Nhập mã thủ công"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageBottom"
+        app:layout_constraintEnd_toStartOf="@+id/verticalRight"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
